@@ -1,0 +1,9 @@
+header {
+  width: 100%;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+}

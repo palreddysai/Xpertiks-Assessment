@@ -1,0 +1,10 @@
+<div class="photo">
+  <div>
+    <img *ngFor="let photo of photos; index as i" [src]="photo.thumbnailUrl" (click)="showLightbox(i)" />
+
+  </div>
+</div>
+<!-- ng-image-fullscreen-view  -->
+<ng-image-fullscreen-view [images]="photos" [imageIndex]="currentIndex" [show]="showFlag" (close)="closeEventHandler()">
+
+</ng-image-fullscreen-view>

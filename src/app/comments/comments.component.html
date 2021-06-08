@@ -1,0 +1,11 @@
+<div class="comments">
+  <div *ngFor="let comment of comments" class="col-3 mb-3">
+    <mat-card class="example-card">
+      <mat-card-content>
+        <p><strong>{{comment.postId}}. Name: </strong> {{comment.name}}</p>
+        <p><strong>Email: </strong> {{comment.email}}</p>
+        <p><strong>Body: </strong> {{comment.body}}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

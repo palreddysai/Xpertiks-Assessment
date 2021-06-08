@@ -1,0 +1,49 @@
+<div class="post">
+  <div *ngFor="let post of posts; let i = index" class="col-md-4 col-lg-3 mb-3">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{post.title | titlecase}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{post.body}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)='showcomments(i)'>show Comments</button>
+      </mat-card-actions>
+      <mat-card-footer>
+        <div *ngFor="let comment of comments; let i = index">
+          <div *ngIf='show == true && post.id === comment.postId' class="p-3 comment">
+            <p><strong>Name: </strong>{{comment.name | titlecase}}</p>
+            <p><strong>Email: </strong>{{comment.email}}</p>
+            <p><strong>Body: </strong>{{comment.body}}</p>
+          </div>
+        </div>
+      </mat-card-footer>
+    </mat-card>
+
+    <!-- </div>
+    <table class="table table-border d-none">
+      <tr>
+        <th>Post Id</th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Body</th>
+
+      </tr>
+      <tbody *ngFor="let comment of comments">
+        <tr>
+          <td>{{comment.postId}}</td>
+          <td>{{comment.id}}</td>
+          <td>{{comment.name}}</td>
+          <td>{{comment.email}}</td>
+          <td>{{comment.body}}</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table> -->
+
+
+  </div>

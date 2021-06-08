@@ -1,0 +1,15 @@
+.post {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.example-card {
+  min-height: 300px;
+  box-shadow: 2px 2px 8px #000;
+}
+mat-card-title {
+  font-size: 1rem;
+}
+.comment {
+  border-bottom: rgba(0, 0, 0, 0.4) solid 2px;
+}

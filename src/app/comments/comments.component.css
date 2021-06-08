@@ -1,0 +1,10 @@
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+}
+strong {
+  font-size: 1rem;
+}
+.example-card {
+  border: rgba(0, 0, 0, 0.7) 1px solid;
+}
